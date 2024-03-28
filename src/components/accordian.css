@@ -1,0 +1,105 @@
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordian{
+  width: 500px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.accordian .item{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  cursor: pointer;
+}
+.accordian .item .title{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordian .item .title h3{
+  font-size: 20px;
+  font-weight: 500;
+}
+.accordian .item .title span{
+  font-size: 20px;
+  font-weight: 500;
+}
+.accordian .item .description{
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.accordian .item.active .description{
+  display: block;
+}
+.accordian .item.active .title span{
+  transform: rotate(180deg);
+}
+.accordian .item.active .title h3
+button{
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.button-wrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+.button-wrapper button{
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fffafa;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button-wrapper button:hover{
+  background-color: #000000;
+  color: #fff;
+}
+.button-wrapper button:active{
+  background-color: #000000;
+  color: #fff;
+}
+.disable{
+  opacity: 0.5;
+}
+.disable button{
+  opacity: 0.5;
+}
+.enable{
+  opacity: 1;
+}
